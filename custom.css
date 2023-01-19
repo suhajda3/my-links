@@ -1,41 +1,73 @@
-
+.ld-background-base {
+    background-color: #fff;
+    background-image: url(https://raw.githubusercontent.com/suhajda3/my-links/main/cloud.svg);
+    background-position: bottom center,50%,50%;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
 .ld-custom-name {
-    color: black;
+    color: #013b52;
 }
-
 .ld-custom-name:visited {
-    color: black;
+    color: #013b52;
 }
-
 .ld-custom-button-container {
-    -webkit-transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    -webkit-transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
-    -webkit-transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
-    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
-    -webkit-transition: -webkit-transform 0.15s cubic-bezier(0, 0.2, 0.5, 3);
-    -webkit-transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3);
-    transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3);
-    background-color: #2665d6;
-    color: #fff;
+    background: #fff;
+    background: rgba(255,255,255,.4);   
+    border: 1px solid #fff;
+    border: 1px solid rgba(255,255,255,.5);
+    color: #013b52;
 }
-
 .ld-custom-button-container:hover {
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
+    color: #fff;
+    transform: scale(1.01); 
 }
-
-.ld-custom-button {
-    -webkit-transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), -webkit-transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
-    -webkit-transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
-    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99),
-    background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
-}
-
 .ld-custom-background-layer {
     background-color: #fff;
+}
+.revision {
+    display: none;
+    opacity: 0;
+}
+.ld-profile-image {
+    border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+    box-shadow: 0 0 20px #5cc9f5;
+    cursor: pointer;
+}
+.ld-profile-image:hover {   
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-name: border-ani;   
+    -moz-animation-direction: alternate;
+    -moz-animation-duration: 1s;   
+    -moz-animation-name: border-ani;   
+    -webkit-animation-direction: alternate; 
+    -webkit-animation-duration: 1s;    
+    -webkit-animation-name: border-ani;   
+}
+@-webkit-keyframes border-ani {
+    0%{
+        border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+    }
+    50%{
+        border-radius: 30% 70% 70% 30%/40% 60% 40% 60%;
+    }
+    100%{
+        border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+    }
+}
+@keyframes border-ani {
+    0%{
+        border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+    }
+    50%{
+        border-radius: 30% 70% 70% 30%/40% 60% 40% 60%;
+    }
+    100%{
+        border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+    }
+}
+.ld-custom-description-h2 {
+    color: #013b52;
 }
